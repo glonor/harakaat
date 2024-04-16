@@ -1,0 +1,9 @@
+_target_: src.data.tashkeela_datamodule.TashkeelaDataModule
+dataset_name: glonor/tashkeela
+data_dir: ${paths.data_dir}
+tokenizer_name: google/byt5-small
+max_len: 512
+batch_size: 1
+train_val_split: [0.8, 0.2]
+num_workers: 4
+pin_memory: False
