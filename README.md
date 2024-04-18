@@ -20,11 +20,12 @@ This project aims to develop a tool for Arabic text diacritization, which involv
 
 - Based on Google's ByT5-small transformer model
 - Fine-tuned on Taskheela Dataset
+- User-friendly Interface with Gradio
 
 ## Project Structure
 
 ```
-├── configs                   <- Hydra configs
+├── configs                <- Hydra configs
 │
 ├── data                   <- Project data
 │
