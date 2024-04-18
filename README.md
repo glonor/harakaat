@@ -23,8 +23,6 @@ This project aims to develop a tool for Arabic text diacritization, which involv
 
 ## Project Structure
 
-The directory structure of new project looks like this:
-
 ```
 ├── configs                   <- Hydra configs
 │
@@ -58,8 +56,6 @@ The directory structure of new project looks like this:
 └── README.md
 ```
 
-<br>
-
 ## 🚀 Quickstart
 
 #### Conda
@@ -70,7 +66,7 @@ git clone https://github.com/glonor/harakaat
 cd harakaat
 
 # create conda environment and install dependencies
-conda env create -f environment.yaml
+conda env create -f environment.yaml -n har
 
 # activate conda environment
 conda activate har

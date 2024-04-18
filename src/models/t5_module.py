@@ -47,7 +47,7 @@ class T5FineTunerLitModule(LightningModule):
         self.train_loss = MeanMetric()
         self.val_loss = MeanMetric()
 
-        # for tracking best so far validation accuracy
+        # for tracking best so far validation loss
         self.val_loss_best = MinMetric()
 
         self.target_sentences = []
