@@ -1,9 +1,6 @@
 # This code is adapted from the following GitHub repository:
 # https://github.com/Hamza5/Pipeline-diacritizer
 
-# Modifications:
-# - [List any significant modifications you made, if applicable]
-
 
 import re
 import sys
@@ -101,7 +98,7 @@ def der_wer_values(target_sentences, predicted_sentences, limit_to_arabic=True, 
     score_d = 1 - (correct_d / total_d) if total_d != 0 else 0
     score_w = 1 - (correct_w / total_w) if total_w != 0 else 0
     score_dm = 1 - (correct_dm / total_dm) if total_dm != 0 else 0
-    score_w = 1 - (correct_wm / total_w) if total_w != 0 else 0
+    score_wm = 1 - (correct_wm / total_w) if total_w != 0 else 0
     score_sentences = sentences_mismatch / len(target_sentences) if len(target_sentences) != 0 else 0
 
-    return (score_d, score_w, score_dm, score_w, score_sentences)
+    return (score_d, score_w, score_dm, score_wm, score_sentences)
