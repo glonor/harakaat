@@ -1,10 +1,7 @@
 import gradio as gr
 from transformers import pipeline
 
-examples = [
-    "أنا أذهب كل سبت إلى المدرسة لأدرس اللغة العربية مع أصدقائي",
-    "أحببت أن أتزور المدينة القديمة وأعرف آثارها وتاريخها",
-]
+examples = ["أنا أذهب كل سبت إلى المدرسة لأدرس اللغة العربية مع أصدقائي", "شكرا على المساعدة", "عفوا، لا أستطيع"]
 
 
 generator = pipeline("text2text-generation", model="glonor/byt5-arabic-diacritization")

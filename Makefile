@@ -35,6 +35,8 @@ hf-login: ## Login to huggingface
 
 push-hub:
 	python src/utils/upload.py $(HF_MODEL_ID) ./logs/train/runs/${RUN}/checkpoints/epoch_000.ckpt
+
+sync-space:
 	huggingface-cli upload $(HF_SPACE) ./app --repo-type=space --commit-message="Sync app files"
 
 deploy: hf-login push-hub
